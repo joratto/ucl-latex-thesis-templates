@@ -1,0 +1,52 @@
+% I may change the way this is done in a future version, 
+%  but given that some people needed it, if you need a different degree title 
+%  (e.g. Master of Science, Master in Science, Master of Arts, etc)
+%  uncomment the following 3 lines and set as appropriate (this *has* to be before \maketitle)
+% \makeatletter
+% \renewcommand {\@degree@string} {Master of Things}
+% \makeatother
+
+\title{Determining the accuracy and completeness of Burst Mode data collection from the Solar Orbiter SWA electron sensor}
+\author{Student 18019006}
+\department{Department of Space and Climate Physics}
+
+\maketitle
+\makedeclaration
+
+\begin{abstract} % 300 word limit
+    The Solar Orbiter Solar Wind Analyser Electron Analyser System (EAS) produces pitch angle distributions (PADs) of solar wind electrons. These distributions are critical to the investigation of kinetic electron plasma dynamics, particularly at sub-second timescales. To achieve this temporal resolution, EAS must operate in \q{Burst Mode}, for which it relies on data from the Solar Orbiter Magnetometer (MAG) to be transmitted in real-time over the onboard S20 inter-instrument data link. However, by comparing onboard MAG data to calibrated MAG data from the Solar Orbiter Archive (SOAR), this project shows that the MAG data received by EAS is prone to inaccuracies. These inaccuracies are shown to be significant enough to result in the loss of data in Burst Mode PADs. This report details methodologies developed to visualise EAS and MAG data in novel ways, facilitating the development of algorithms that quantify MAG data inaccuracies and their effects on EAS data products, including a computationally inexpensive metric, \textit{C}, for assessing EAS Burst Mode PAD data completeness and accelerating future solar wind electron research. This report also details an investigation of one possible cause of MAG data inaccuracy; time latency over the S20 data link itself. An approach was developed to quantify this latency error using cross-correlation of MAG time series received onboard with calibrated MAG time series available on the ground. A Monte Carlo method was applied to estimate time delay uncertainty for sample time series data, yielding promising, yet inconclusive results. Additionally, this report describes some of this project's unexpected discoveries, including an error in the data processing pipeline onboard Solar Orbiter which led a significant amount of once-publically-available EAS data to be expunged from SOAR.
+\end{abstract}
+
+\begin{impactstatement}
+
+\begin{quote}
+
+Within academia, this project primarily presents the concepts for tools and methodologies that could be used to augment existing repositories for space plasma physics science data, such as the online Solar Orbiter Archive, providing benefits in the form of useful metrics and data visualisation. Hopefully, this could accelerate future research in kinetic plasma physics and help to answer fundamental questions about magnetic turbulence and re-connection in the solar wind. The impact of this project's primary objectives is somewhat overshadowed by the accidental discovery of an error in Solar Orbiter's onboard data processing pipeline which led to the removal of \(\sim6\) months of erroneous science data from the Solar Orbiter Archive.
+\\
+
+Without academia, plasma physics research is important because of its unpredictable effects on countless industries, including the medical industry with novel approaches to hadron therapy, and the energy industry with exotic approaches to controlled fusion.
+
+\end{quote}
+\end{impactstatement}
+
+\begin{acknowledgements}
+Thank you to my supervisor, Chris, for his guidance and support. 
+\\
+
+Thank you, as well, to my other professors, Andrew, Alan, Bryan, Daniel, Georgios, Hamish, Ian, Kinwah, Marek, Mat, Matt, Paul, Saeed, Sarah, Steve, and Tom. 
+\\
+
+Thank you to Kwesi, Martha, and Iolanda for living with me. Thank you to Lilia and all my other friends and family for being in my life.
+\\
+
+Thank you to Gang KBO for giving me time off from my spacecraft \& subsystems responsibilities so I could finish this report.
+\end{acknowledgements}
+
+\setcounter{tocdepth}{2} 
+% Setting this higher means you get contents entries for
+%  more minor section headers.
+
+\tableofcontents
+\listoffigures
+\listoftables
+

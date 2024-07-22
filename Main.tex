@@ -52,7 +52,7 @@
 %  mres
 %  mphil
 %\documentclass[12pt,phd,draft,a4paper,oneside]{ucl_thesis}
-\documentclass[12pt,phd,a4paper,oneside]{ucl_thesis}
+\documentclass[12pt,msc,a4paper,oneside]{ucl_thesis}
 
 
 % Package configuration:
@@ -70,11 +70,47 @@
 \input{FloatSettings} % For things like figures and tables
 \input{BibSettings}   % For bibliographies
 
+\makeatletter
+\newcommand*{\centerfloat}{%
+  \parindent \z@
+  \leftskip \z@ \@plus 1fil \@minus \textwidth
+  \rightskip\leftskip
+  \parfillskip \z@skip}
+\makeatother
+
 % These control how many number sections your subsections will take
 %    e.g. Section 2.3.1.5.6.3
 %  and how many of those will get put into the contents pages.
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
+
+
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{listings}
+%\usepackage[english, russian]{babel}
+
+\lstdefinestyle{myCustomMatlabStyle}{
+  language=Python,
+  numbers=none,
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=4,
+  showspaces=false,
+  showstringspaces=false
+}
+
+% Useful shortcuts:
+
+\newcommand{\Beas}{\(B_{EAS}\)}
+\newcommand{\Bmag}{\(B_{MAG}\)}
+
+\newcommand{\ppara}{\upharpoonleft \! \upharpoonright}
+\newcommand{\apara}{\upharpoonleft \! \downharpoonright}
+
+\newcommand{\q}[1]{``#1''}
 
 
 \begin{document}
@@ -94,18 +130,19 @@
 
 % At last, content! Remember filenames are case-sensitive and 
 %  *must not* include spaces.
-\include{Preamble}
-\include{Introduction}
-\include{Chapter2}
-\include{Chapter3}
-\include{Conclusions}
+\include{Chapter0_Preamble}
+\include{Chapter1_Intro}
+\include{Chapter3_Methods}
+\include{Chapter4_Results}
+% \include{Chapter5_Discussion}
+\include{Chapter6_Conclusion}
 \include{Appendices} 
 % You could separate these out into different files if you have
 %  particularly large appendices.
 
 % Actually generates your bibliography. The fact that \include is 
 % the last thing before this ensures that it is on a clear page.
-\bibliography{example}
+\bibliography{citations}
 
 % All done. \o/
 \end{document}

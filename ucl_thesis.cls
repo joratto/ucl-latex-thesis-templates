@@ -134,6 +134,7 @@
 %  in the submission statement.  Make PhD the default.
 %    \begin{macrocode}
 \newcommand \@doctor{Doctor of Philosophy}
+\newcommand \@msc{Master of Science}
 \newcommand \@master{Master of Philosophy}
 \newcommand \@mres{Master of Research}
 \newcommand \@degree@string{\@doctor}
@@ -147,7 +148,9 @@
 %  flag and ensure that the appropriate options are passed onto the superclass.
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}[1997/12/01]
-\ProvidesClass{ucl_thesis}[\filedate\space\fileversion\space UCL MRes/MPhil/PhD Thesis class]
+\ProvidesClass{ucl_thesis}[\filedate\space\fileversion\space UCL MSc/MRes/MPhil/PhD Thesis class]
+\DeclareOption{msc}{\renewcommand\@degree@string{\@msc}}
+\DeclareOption{MSc}{\renewcommand\@degree@string{\@msc}}
 \DeclareOption{mres}{\renewcommand\@degree@string{\@mres}}
 \DeclareOption{MRes}{\renewcommand\@degree@string{\@mres}}
 \DeclareOption{mphil}{\renewcommand\@degree@string{\@master}}
@@ -463,6 +466,11 @@
     \begin{center}%
     \@date%
     \end{center}%
+        
+    \begin{center}
+        \textbf{Word Count: 11,703}
+    \end{center}
+    
     \if@twoside %
       \newpage%
       ~\\

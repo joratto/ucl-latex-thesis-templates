@@ -1,0 +1,15 @@
+\chapter{Conclusion}
+\label{chapterlabel4}
+The goal of this project was to determine the accuracy and completeness of Solar Orbiter SWA-EAS Burst Mode PADs as a result of inaccuracies in \Beas\; the magnetic field vector data received by the SWA-DPU from MAG over the onboard S20 data link. These inaccuracies were expected to manifest as an offset between \Beas\ and \Bmag; the ground-processed magnetic field vector, and this was confirmed by preliminary comparisons between magnetic field time series performed using methodologies developed to crop and transform time series data acquired from the Solar Orbiter Archive. These offsets were found to be significant enough to lead to lost data in Burst Mode PADs, and this led to the development of an algorithm for \textit{C}; a concise metric for Burst Mode PAD completeness depending on pitch angle loss, represented by \(\Delta_{\ppara}\) and \(\Delta_{\apara}\). Pitch angle loss due to the inaccuracies described in this project manifests first near the extremities of a PAD at \(0\degree\) and \(180\degree\), which may have implications for future research investigating field-aligned electron strahl. Particularly high pitch angle loss (i.e. low PAD completeness) may also be valuable in its own right if it can be used to study agyrotropy. The metric \textit{C} can be a computationally inexpensive tool for classifying PAD data for any of these purposes.
+\\
+
+The development of \textit{C} was aided by the development of a tool for creating images and animations visualising EAS elevation-azimuth bins projected on to SRF coordinates along with time-varying magnetic field vectors, pitch angle contours, and PAD loss.
+\\
+
+One source of \Beas\ inaccuracy that this project aimed to investigate in particular was a possible latency over the S20 link. A method was developed to determine this latency by cross-correlation of \Beas\ and \Bmag\ using Monte Carlo error estimation, yielding promising, though inconclusive results.
+\\
+
+In addition to the project's primary goals, it also led to the discovery of some unexpected features in the EAS Burst Mode dataset. One such feature is a recurring issue with purported 8Hz \Beas\ data that is only updated at a 1Hz cadence, which may have consequences for Burst Mode data accuracy. Much has been said about the error in SWA-DPU whose discovery led to the deletion of \(\sim6\) months of EAS data from SOAR.
+\\
+
+For future work, a clear direction would be to apply the methods developed in this project for calculating \textit{C} and S20 latency to much larger sets of EAS and MAG data and investigate how those quantities vary over months or years. Similar surveys might lead to other discoveries, such as the prevalence and/or origin of the 8Hz-1Hz data issue. There is also plenty of room for improvement of the time series cropping and S20 latency determination algorithms that were hurriedly developed over the course of this project.

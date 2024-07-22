@@ -1,22 +1,228 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{Appendices}
-
 % The \appendix command resets the chapter counter, and changes the chapter numbering scheme to capital letters.
-%\chapter{Appendices}
+% \chapter{Appendices}
 \appendix
-\chapter{An Appendix About Stuff}
+\chapter{EAS Angular Bin Tables}
 \label{appendixlabel1}
-(stuff)
+Tables containing elevation and azimuth binning data for both EAS heads can be found in some \textit{.cdf} files uploaded to SOAR. The uploaded tables have changed over the years since Solar Orbiter's commissioning, and tables associated with data uploaded at any time between 17th July 2021 and the time of writing are included here.
+\\
 
-\chapter{Another Appendix About Things}
+\q{EAS1/2 Bin Index} refers to the index for each bin. \q{EAS1/2 Bin Index} is only used for the azimuthal bin table, because this table is identical for EAS1 and EAS2. The elevation bin tables are different for Eas1 and EAS2, hence the distinction between \q{EAS1 Bin Index} and \q{EAS2 Bin Index}. \q{Bin Center} refers to the angle of the center of each bin. \q{Bin Upper Delta} and \q{Bin Lower Delta} refer to the angular differences between \q{Bin Center} and the upper and lower boundaries of each bin respectively.
+\\
+
+
+
+
+\begin{table}[h]
+    \centering
+    \centerfloat
+    \begin{tabular}{cccc}
+        \textbf{EAS1/2 Bin Index} & \textbf{Bin Center (\degree)} & \textbf{Bin Upper Delta (\degree)} & \textbf{Bin Lower Delta (\degree)}\\
+        0 & 5.625 & 5.625 & 5.625\\
+        1 & 16.875 & 5.625 & 5.625\\
+        2 & 28.125 & 5.625 & 5.625\\
+        3 & 39.375 & 5.625 & 5.625\\
+        4 & 50.625 & 5.625 & 5.625\\
+        5 & 61.875 & 5.625 & 5.625\\
+        6 & 73.125 & 5.625 & 5.625\\
+        7 & 84.375 & 5.625 & 5.625\\
+        8 & 95.625 & 5.625 & 5.625\\
+        9 & 106.875 & 5.625 & 5.625\\
+        10 & 118.125 & 5.625 & 5.625\\
+        11 & 129.375 & 5.625 & 5.625\\
+        12 & 140.625 & 5.625 & 5.625\\
+        13 & 151.875 & 5.625 & 5.625\\
+        14 & 163.125 & 5.625 & 5.625\\
+        15 & 174.375 & 5.625 & 5.625\\
+        16 & 185.625 & 5.625 & 5.625\\
+        17 & 196.875 & 5.625 & 5.625\\
+        18 & 208.125 & 5.625 & 5.625\\
+        19 & 219.375 & 5.625 & 5.625\\
+        20 & 230.625 & 5.625 & 5.625\\
+        21 & 241.875 & 5.625 & 5.625\\
+        22 & 253.125 & 5.625 & 5.625\\
+        23 & 264.375 & 5.625 & 5.625\\
+        24 & 275.625 & 5.625 & 5.625\\
+        25 & 286.875 & 5.625 & 5.625\\
+        26 & 298.125 & 5.625 & 5.625\\
+        27 & 309.375 & 5.625 & 5.625\\
+        28 & 320.625 & 5.625 & 5.625\\
+        29 & 331.875 & 5.625 & 5.625\\
+        30 & 343.125 & 5.625 & 5.625\\
+        31 & 354.375 & 5.625 & 5.625\\
+    \end{tabular}
+    \caption{Bin Table: EAS1/2 Azimuth (as found in SOAR) - 17th July 2021}
+    \label{tab: Bin Table EAS Azimuth July 2021}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \centerfloat
+    \begin{tabular}{cccc}
+        \textbf{EAS1 Bin Index} & \textbf{Bin Center (\degree)} & \textbf{Bin Upper Delta (\degree)} & \textbf{Bin Lower Delta (\degree)}\\
+        0 & 39.34 & 5.66 & 5.66\\
+        1 & 29.17 & 4.514 & 4.514\\
+        2 & 20.91 & 3.748 & 3.748\\
+        3 & 13.98 & 3.179 & 3.179\\
+        4 & 8.06 & 2.74 & 2.74\\
+        5 & 2.91 & 2.409 & 2.409\\
+        6 & -1.66 & 2.161 & 2.161\\
+        7 & -5.82 & 1.996 & 1.996\\
+        8 & -9.7 & 1.886 & 1.886\\
+        9 & -13.43 & 1.841 & 1.841\\
+        10 & -17.13 & 1.856 & 1.856\\
+        11 & -20.94 & 1.95 & 1.95\\
+        12 & -25.0 & 2.115 & 2.115\\
+        13 & -29.53 & 2.413 & 2.413\\
+        14 & -34.82 & 2.88 & 2.88\\
+        15 & -41.36 & 3.655 & 3.655\\
+    \end{tabular}
+    \caption{Bin Table: EAS1 Elevation (as found in SOAR) - 17th July 2021}
+    \label{tab: Bin Table EAS1 Elevation July 2021}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \centerfloat
+    \begin{tabular}{cccc}
+        \textbf{EAS2 Bin Index} & \textbf{Bin Center (\degree)} & \textbf{Bin Upper Delta (\degree)} & \textbf{Bin Lower Delta (\degree)}\\
+        0 & 38.94 & 6.06 & 6.06\\
+        1 & 28.25 & 4.633 & 4.633\\
+        2 & 19.86 & 3.761 & 3.761\\
+        3 & 12.99 & 3.111 & 3.111\\
+        4 & 7.25 & 2.624 & 2.624\\
+        5 & 2.35 & 2.272 & 2.272\\
+        6 & -1.93 & 2.012 & 2.012\\
+        7 & -5.78 & 1.838 & 1.838\\
+        8 & -9.37 & 1.747 & 1.747\\
+        9 & -12.84 & 1.722 & 1.722\\
+        10 & -16.32 & 1.759 & 1.759\\
+        11 & -19.97 & 1.887 & 1.887\\
+        12 & -23.97 & 2.113 & 2.113\\
+        13 & -28.57 & 2.485 & 2.485\\
+        14 & -34.13 & 3.071 & 3.071\\
+        15 & -41.1 & 3.897 & 3.897\\
+    \end{tabular}
+    \caption{Bin Table: EAS2 Elevation (as found in SOAR) - 17th July 2021}
+    \label{tab: Bin Table EAS2 Elevation July 2021}
+\end{table}
+
+\chapter{Code Excerpts}
 \label{appendixlabel2}
-(things)
+
+The full codebase for this project can be found in the author's GitHub repository: 
+
+\textit{https://github.com/joratto/Solar-Orbiter-SWA-EAS-Data-Completeness-MSc}
+\\
+
+\lstset{basicstyle=\tiny, style=myCustomMatlabStyle}
+\begin{lstlisting}[language=Python]
+time_index = 0
+for i in range(1,searchdivisions+1):
+    time_index += int(length/2**i)*(time_array[time_index+int(length/2**i)] < time_reference)
+while (time_array[time_index] < time_reference) and (time_index < length-1):
+    time_index += 1
+\end{lstlisting}
+\captionof{lstlisting}{\q{Time Axis Cropping Algorithm}}
+\label{alg: fast time crop}
+
+\bgroup\obeylines
+
+
+
+\egroup
+
+For the bin visualisation algorithm described in Section \ref{visualisation}, a single elevation bin can be defined by keeping the elevation angle of successive points constant (and equal to an upper/lower bound) while the azimuth phase angle is varied according to a defined angular point density, and vice versa for a single azimuth bin. Repeating this for the upper and lower edge of an elevation bin and an azimuth bin defines an elevation-azimuth pixel. Once defined, the points delineating each pixel can be projected to SRF space in spherical coordinates with the following sequence of transformations: Spherical EAS1/2 \(\rightarrow\) Cartesian EAS1/2 \(\rightarrow\) Cartesian SRF \(\rightarrow\) Spherical SRF. This pixel point plotting algorithm was implemented in Python as described in Appendix Listing \ref{alg: pix point plot}, where k\_az and k\_el represent integer numbers of azimuth and elevation phase angles along a single bin edge respectively. This algorithm double-counts edges shared between adjacent pixels, trading a linear amount of computational efficiency for some convenience in plotting individual pixels. Once the points are transformed to spherical SRF coordinates, their azimuth angles are converted from the range [-180,180] to the range [0,360] for uniformity with EAS azimuth conventions. Given sufficient point density (20/\degree\ works well), this results in the visually curved bins shown in Figure \ref{fig: all bins}. Another result of high point density is that this algorithm's many matrix multiplications for each point transformation lead to a computation time of several minutes for a single image. To save time, the algorithm was adapted to save the point coordinates for each pixel to .csv files in a directory under \q{bin\_projections\(\backslash\)EAS\textit{X}\(\backslash\)el\textit{Y}\(\backslash\)EAS\textit{X}\_el\textit{Y}\_az\textit{Z}.csv} where \textit{X} is the EAS head number and \textit{Y} and \textit{Z} are the elevation and azimuth bin indices respectively. These files can then be read and plotted with an order of magnitude reduction in computation time. Part of this algorithm's Python implementation is as shown in Appendix Listing \ref{alg: pix point save}.
+\\
+
+\lstset{basicstyle=\tiny, style=myCustomMatlabStyle}
+\begin{lstlisting}[language=Python]
+angleStep = 1/pointDensity
+azimuthPointCount = int(pointDensity*360/azimBinCount)
+for i in range(elevBinCount):
+    elevationBinWidth = 2*elevDeltaLowerArray[i]
+    elevationPointCount = int(point_density*elevationBinWidth)
+    binBoundaryProjectionArray.append([])
+    for j in range(azimBinCount):
+        pointArray = []
+        for k_az in range(0,azimuthPointCount):
+            lowerEdge_elev = np.array([1, elevLowerBoundArray[i], azimLowerBoundArray[j]+k_az*angleStep])
+            lowerEdge_elev = cartToSphere(cart_proj_tuple[head].dot(sphereToCart(lowerEdge_elev)))
+            pointArray.append(lowerEdge_elev)
+
+            upperEdge_elev = np.array([1, elevUpperBoundArray[i], azimLowerBoundArray[j]+k_az*angleStep])
+            upperEdge_elev = cartToSphere(cart_proj_tuple[head].dot(sphereToCart(upperEdge_elev)))
+            pointArray.append(upperEdge_elev)
+
+        for k_el in range(0,elevationPointCount):
+            lowerEdge_azim = np.array([1, elevLowerBoundArray[i]+k_el*angleStep, azimLowerBoundArray[j]])
+            lowerEdge_azim = cartToSphere(cart_proj_tuple[head].dot(sphereToCart(lowerEdge_azim)))
+            pointArray.append(lowerEdge_azim)
+
+            upperEdge_azim = np.array([1, elevLowerBoundArray[i]+k_el*angleStep, azimUpperBoundArray[j]])
+            upperEdge_azim = cartToSphere(cart_proj_tuple[head].dot(sphereToCart(upperEdge_azim)))
+            pointArray.append(upperEdge_azim)
+\end{lstlisting}
+\captionof{lstlisting}{\q{Pixel Point Plotting Algorithm}}
+\label{alg: pix point plot}
+
+\lstset{basicstyle=\tiny, style=myCustomMatlabStyle}
+\begin{lstlisting}[language=Python]
+for i in range(16):
+        for j in range(32):
+                filename = 'bin_projections\EAS{head}\el{i}\EAS{head}_el{i}_az{j}.csv'
+                pixelArray = np.genfromtxt(filename, delimiter=",")
+                el = pixelArray[1]
+                az = pixelArray[2]
+                ax.scatter(az,el,color=bin_color,marker='.',s=s)
+\end{lstlisting}
+\captionof{lstlisting}{\q{Pixel Point Saving Algorithm}}
+\label{alg: pix point save}
+
+% (things)
 
 \chapter{Colophon}
 \label{appendixlabel3}
-\textit{This is a description of the tools you used to make your thesis. It helps people make future documents, reminds you, and looks good.}
+% \textit{This is a description of the tools you used to make your thesis. It helps people make future documents, reminds you, and looks good.}
 
-\textit{(example)} This document was set in the Times Roman typeface using \LaTeX\ and Bib\TeX , composed with a text editor. 
+% UCL Thesis LaTeX Template
+%  (c) Ian Kirker, 2014
+% 
+% This is a template/skeleton for PhD/MPhil/MRes theses.
+
+This document was set in the Times New Roman typeface using \LaTeX\ and Bib\TeX. It was composed using Overleaf. The document format is based on the \q{UCL Thesis \LaTeX\ Template} by Ian Kirker, which is available on GitHub\cite{kirker2014}. In addition, a few custom \LaTeX\ functions were used to make the writing process a bit easier. For example:
+\\
+
+\noindent Quotations are written using this function:
+\begin{verbatim}
+    \newcommand{\q}[1]{``#1''}
+\end{verbatim}
+The symbols \Beas\ and \Bmag\ are written using these functions:
+\begin{verbatim}
+    \newcommand{\Beas}{\(B_{EAS}\)}
+    \newcommand{\Bmag}{\(B_{MAG}\)}
+\end{verbatim}
+The symbols \q{\(\ppara\)} and \q{\(\apara\)} are dependent on the \textit{amssymb} package for \LaTeX\ and are written using these functions: 
+\begin{verbatim}
+    \newcommand{\ppara}{\upharpoonleft \! \upharpoonright}
+    \newcommand{\apara}{\upharpoonleft \! \downharpoonright}
+\end{verbatim}
+Large figures are occasionally plotted with a width \(>1\), which causes them to be un-centered on the page by default. The following function by \textit{tex.stackexchange.com} user Marc Baudoin keeps them centered\cite{baudoin2011}:
+\begin{verbatim}
+    \makeatletter
+    \newcommand*{\centerfloat}{%
+        \parindent \z@
+        \leftskip \z@ \@plus 1fil \@minus \textwidth
+         \rightskip\leftskip
+        \parfillskip \z@skip}
+    \makeatother
+\end{verbatim}
+
+\vspace*{\fill}
+\noindent \q{I have made an end at last, and my weary hand can rest.}\cite{ruth2019}
+
+
  % description of document, e.g. type faces, TeX used, TeXmaker, packages and things used for figures. Like a computational details section.
 % e.g. http://tex.stackexchange.com/questions/63468/what-is-best-way-to-mention-that-a-document-has-been-typeset-with-tex#63503
 
